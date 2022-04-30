@@ -1,0 +1,535 @@
+/*fontes*/
+@font-face {
+    font-family:'bebas';
+    src: url('BebasNeue-Regular.ttf')
+    format('truetype');
+}
+
+/*-------------------------------------------------INDEX----------------------------------*/
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-top: 62px !important;
+	background-color: #121212;
+}
+
+.btn-grad {
+	color: #fff;
+    background-image: linear-gradient(to right, #4c4c4c , #c5c5c5);
+}
+.nav-shadow{
+	box-shadow: 0px -2px 9px 5px black;
+}
+.text-cor-sec-brand{
+	color: white !important;
+	text-shadow: #8A00B2 0px 0px 15px !important;
+	transition: text-shadow 0.5s ease-in-out;
+}
+.text-cor-sec-brand:hover{
+	color: white !important;
+	text-shadow: #9300ff 0px 0px 20px !important;
+	transition: text-shadow 0.5s ease-in-out;
+}
+.text-brand{
+	font-weight: bold !important;
+	font-size: 1.5rem;
+}
+.nav-bg-dark{
+	background-color: black !important;
+}
+.nav-text{
+	color: #495057;
+	transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.nav-text:hover{
+	color: #4a0080 !important;
+	transition: color 0.2s ease-in-out;
+}
+.nav-text:active{
+	color: #4a0080 !important;
+	transition: color 0.2s ease-in-out;
+}
+.nav-text-current{
+	color: #4a0080 !important;
+}
+/*
+----------------------------------------- FORMULARIO LOGIN/CADASTRO-------------------------------------*/
+.boxlogin{
+    width: 25rem !important;
+    padding: 40px !important;
+    position: absolute !important;
+    box-shadow: 0px 0px 12px black !important;
+    top: 50% !important;
+    left: 50% !important;
+	margin-top: 31px;
+    transform: translate(-50%, -50%) !important;
+    background: #171717 !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+}
+.boxlogin h1{
+    color: white;
+    text-transform: uppercase;
+}
+.boxlogin input[type='text'],.boxlogin input[type='password'],.boxlogin input[type='email']{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #4a0080;
+    outline: none;
+    width: 250px;
+    padding: 14px 10px;
+    border-radius: 24px;
+    transition: width 0.25s, margin 0.25s, padding 0.25s;
+    color:  white;
+}
+.boxlogin input[type='text']:focus,.boxlogin input[type='password']:focus,.boxlogin input[type='email']:focus{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    outline: none;
+    width: 270px;
+    padding: 14px 10px;
+    border-radius: 24px;
+    transition: width 0.25s, border 0.25s;
+    color:  white;
+}
+.boxlogin input[type='submit']{
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid #4a0080;
+    outline: none;
+    width: 140px;
+    padding: 14px 10px;
+    border-radius: 24px;
+    color: white;
+    transition: width 0.25s;
+}
+.boxlogin input[type='submit']:hover{
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid white;
+    outline: none;
+    width: 160px;
+    padding: 14px 10px;
+    border-radius: 24px;
+    color: white;
+    transition: 0.25s;
+}
+.boxlogin a{
+    display: block;
+    font-family: sans-serif;
+    color: #5c5c5c;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.boxlogin a:hover{
+    color: #bababa;
+    text-shadow: 0px 0px 10px purple;
+    transition: color 0.25s, text-shadow 0.25s;
+}
+h1.login-cadastro{
+	padding-bottom: 0.75rem;
+	font-weight: bold;
+}
+/*-----------------------------------------------SOBRE----------------------------------------*/
+.cont-img{
+    text-align: left;
+}
+
+.logo{
+    margin-top: 62px;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.container{
+	width: 100%;
+}
+
+.h1text{
+    color: white !important;
+    font-family: 'bebas';
+	font-size: 55px;
+    font-weight: bolder;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-left: 35%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim-title 0.5s ease-out forwards;
+    
+}
+
+@keyframes slide-in-anim-title {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+.ptext{
+	font-family: 'bebas';
+    color: white !important;
+	font-size: 29px;
+    font-weight: regular;
+	text-align: justify;
+	padding: 0;
+	margin: 0;
+	margin-left: 35%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim-para 1s ease-out forwards;
+}
+
+@keyframes slide-in-anim-para {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+/*-----------------------------------------------FAQ--------------------------------------------------*/
+
+.cor-teste:not(.collapsed) {
+    color: white !important;
+    background-color: #5c5c5c !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    
+}
+
+.FAQ_title{
+    font-family: "bebas";
+    color: white !important;
+    font-family: 'bebas';
+	font-size: 55px;
+    font-weight: bolder;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-left: 0%;
+    margin-top:30px;
+}
+
+.accordion-button-teste {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: white !important;
+    text-align: left;
+    background-color: black !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+
+
+/*----------------------------------------------PLANOS---------------------------------*/
+
+.fade1{
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.fade2{
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.fade3{
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.col-planos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px black !important;
+    background: #171717 !important;
+}
+p.preco{
+    color: #8A00B2 !important;
+    text-shadow: black 0px 0px 5px !important;
+    font-family: 'bebas';
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+/*----------------------------------TEMAS-------------------------------------*/
+.btn-roxo {
+    color: #8A00B2;
+    border-color: #8A00B2;
+    padding: 10px 20px;
+    margin: 0;
+}
+.btn-roxo:hover {
+    color: #FFF;
+    background-color: #8A00B2;
+    border-color: #8A00B2;
+}
+
+.btn-roxo:focus {
+    box-shadow: 0 0 0 0.25rem #8A00B2;
+}
+h1.white-shadow{
+    color: white !important;
+    text-shadow: black 0px 0px 5px !important;
+    font-family: 'bebas';
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.bebas-white p{
+    font-family: 'bebas';
+    color: #A7A9A5 !important;
+    font-size: 24px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+/*----------------------------------CONTATO-------------------------------------*/
+.contact_box{
+    width: auto !important;
+    padding: 40px !important;
+    position: absolute !important;
+    box-shadow: 0px 0px 12px black !important;
+    top: 50% !important;
+    left: 50% !important;
+	margin-top: 31px;
+    transform: translate(-50%, -50%) !important;
+    background: #171717 !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+}
+.contact_box h1{
+    font-family: "bebas";
+    color: white;
+    text-transform: uppercase;
+}
+.contact_box input[type='text'],.contact_box input[type='tel'],.contact_box input[type='email']{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px 20px;
+    text-align: center;
+    border: 2px solid #4a0080;
+    outline: none;
+    width: 350px;
+    padding: 7px 10px;
+    border-radius: 15px;
+    transition: width 0.25s, margin 0.25s, padding 0.25s;
+    color:  white;
+}
+.contact_box input[type='text']:focus,.contact_box input[type='tel']:focus,.contact_box input[type='email']:focus{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    outline: none;
+    width: 350px;
+    padding: 7px 10px;
+    border-radius: 15px;
+    transition: width 0.25s, border 0.25s;
+    color:  white;
+}
+
+.contact_box textarea{
+    border: 0;
+    color: white;
+    background: none;
+    border: 2px solid #4a0080;
+    border-radius: 15px;
+    text-align: left;
+    width: 350px;
+    resize: none;
+    padding: 5px 10px;
+    height: 120px ;
+}
+.contact_box input[type='submit']{
+    background: none;
+    text-align: center;
+    border: 2px solid #4a0080;
+    outline: none;
+    width: 140px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+    transition: width 0.25s;
+}
+.contact_box input[type='submit']:hover{
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid white;
+    outline: none;
+    width: 160px;
+    padding: 10px 10px;
+    border-radius: 24px;
+    color: white;
+    transition: 0.25s;
+}
+.contact_box a{
+    display: block;
+    font-family: sans-serif;
+    color: #5c5c5c;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.contact_box a:hover{
+    color: #bababa;
+    text-shadow: 0px 0px 10px purple;
+    transition: color 0.25s, text-shadow 0.25s;
+}
+h1.contact{
+	padding-bottom: 0.75rem;
+	font-weight: bold;
+}
